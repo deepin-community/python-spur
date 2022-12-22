@@ -1,0 +1,6 @@
+*.pyc
+/_virtualenv
+/*.egg-info
+/MANIFEST
+/.tox
+/build

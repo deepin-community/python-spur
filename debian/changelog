@@ -1,0 +1,76 @@
+python-spur (0.3.21-1) unstable; urgency=medium
+
+  * New upstream release
+  * debian/control:
+    - New standards version 4.4.0 - no changes
+    - DH level 12
+
+ -- Ruben Undheim <ruben.undheim@gmail.com>  Fri, 18 Oct 2019 22:54:48 +0200
+
+python-spur (0.3.20-2) unstable; urgency=medium
+
+  * Team upload.
+  * Convert git repository from git-dpm to gbp layout
+  * Use debhelper-compat instead of debian/compat.
+  * Drop Python 2 support.
+
+ -- Ondřej Nový <onovy@debian.org>  Thu, 25 Jul 2019 16:28:34 +0200
+
+python-spur (0.3.20-1) unstable; urgency=medium
+
+  [ Ruben Undheim ]
+  * New upstream release
+  * d/rules:
+    - Add environment variables so that the test passes when building
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/copyright: Use https protocol in Format field
+  * d/control: Remove ancient X-Python3-Version field
+
+ -- Ruben Undheim <ruben.undheim@gmail.com>  Fri, 13 Jul 2018 22:02:00 +0200
+
+python-spur (0.3.17-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/control:
+    - Standards-Version 3.9.8 - no changes
+  * debian/rules:
+    - Define PYBUILD_NAME
+    - Override dh_clean.
+  * Deleted .install files since this happens automatically with pybuild
+    when PYBUILD_NAME is set.
+
+ -- Ruben Undheim <ruben.undheim@gmail.com>  Fri, 13 May 2016 20:07:46 +0200
+
+python-spur (0.3.15-2) unstable; urgency=medium
+
+  * debian/patches/0001-Fix-character-that-s-causing-build-trouble.patch
+    - Fixes invalid character in README.rst which causes build trouble.
+  * debian/control:
+    - Ran "cme fix dpkg-control"
+    - Standards version changed to 3.9.7 - no necessary changes
+    - Vcs-Git now using https
+
+ -- Ruben Undheim <ruben.undheim@gmail.com>  Sun, 21 Feb 2016 11:47:58 +0100
+
+python-spur (0.3.15-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Ruben Undheim <ruben.undheim@gmail.com>  Sun, 03 Jan 2016 11:34:21 +0100
+
+python-spur (0.3.14-2) unstable; urgency=medium
+
+  * debian/control: add python-paramiko and python3-paramiko to
+    build-dependencies
+    - Fixes FTBFS (test suite problem) (Closes: #802158)
+  * Converted to git-dpm patch management
+
+ -- Ruben Undheim <ruben.undheim@gmail.com>  Sun, 18 Oct 2015 10:27:41 +0200
+
+python-spur (0.3.14-1) unstable; urgency=low
+
+  * Initial release (Closes: #784026)
+
+ -- Ruben Undheim <ruben.undheim@gmail.com>  Mon, 25 May 2015 12:46:51 +0200
